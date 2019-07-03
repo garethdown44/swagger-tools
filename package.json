@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "gulp",
-    "test-debug": "node --debug-brk node_modules/.bin/gulp"
+    "test-debug": "node --debug-brk node_modules/.bin/gulp",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": {
     "name": "Jeremy Whitlock",
@@ -82,6 +84,8 @@
     "superagent": "^2.0.0",
     "swagger-converter": "^0.1.7",
     "traverse": "^0.6.6",
-    "z-schema": "^3.15.4"
-  }
+    "z-schema": "^3.15.4",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
